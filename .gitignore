@@ -1,0 +1,25 @@
+# Binaries
+/worker
+/forwarder
+/sample
+/bin/
+*.exe
+*.test
+*.out
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+!example.tfvars
+
+# Local env
+.env
+.env.*
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
