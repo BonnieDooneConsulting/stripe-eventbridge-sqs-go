@@ -1,0 +1,28 @@
+{
+  "id": "evt_sample_subscription",
+  "object": "event",
+  "api_version": "API_VERSION",
+  "created": 1761600000,
+  "data": {
+    "object": {
+      "id": "sub_SampleSubscription01",
+      "object": "subscription",
+      "cancel_at_period_end": false,
+      "canceled_at": 1761600000,
+      "created": 1759008000,
+      "currency": "usd",
+      "customer": "cus_SampleCustomer01",
+      "ended_at": 1761600000,
+      "livemode": false,
+      "metadata": {},
+      "status": "canceled"
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 0,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "customer.subscription.deleted"
+}

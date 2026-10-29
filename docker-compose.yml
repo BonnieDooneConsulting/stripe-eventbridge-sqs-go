@@ -1,0 +1,25 @@
+# Local AWS for development and the integration test. Nothing here talks to a
+# real AWS account.
+#
+# LocalStack is pinned to 4.14.0 on purpose: it's the last release I found
+# that starts without a LocalStack account. The newer 2026.x images exit
+# unless LOCALSTACK_AUTH_TOKEN is set.
+services:
+  localstack:
+    image: localstack/localstack:4.14.0
+    ports:
+      # Set LOCALSTACK_PORT if something else already uses 4566.
+      - "127.0.0.1:${LOCALSTACK_PORT:-4566}:4566"
+    environment:
+      SERVICES: sqs,events,dynamodb
+      AWS_DEFAULT_REGION: us-east-1
+    volumes:
+      # Scripts in ready.d run once LocalStack is up. Ours creates the bus,
+      # rule, queues, and dedupe table.
+      - ./localstack/init:/etc/localstack/init/ready.d:ro
+    healthcheck:
+      # Healthy only after the init script has finished.
+      test: ["CMD-SHELL", "curl -fs http://localhost:4566/_localstack/init/ready | grep -q '\"completed\": true'"]
+      interval: 3s
+      timeout: 5s
+      retries: 40
