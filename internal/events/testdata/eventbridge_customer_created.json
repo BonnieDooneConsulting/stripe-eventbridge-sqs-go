@@ -1,0 +1,60 @@
+{
+   "version":"0",
+   "id":"17e8dff5-d6cd-3770-ace9-aeac02b6ac3f",
+   "detail-type":"customer.created",
+   "source":"aws.partner/stripe.com/ed_61PgtRTG5aTCIz98516PLsRGLISQK0Otk6FWKjBrcDia",
+   "account":"506417113029",
+   "time":"2024-03-07T18:27:56Z",
+   "region":"us-west-2",
+   "resources":[
+      "arn:aws:events:us-west-2::event-source/aws.partner/stripe.com/ed_61PgtRTG5aTCIz98516PLsRGLISQK0Otk6FWKjBrcDia"
+   ],
+   "detail":{
+      "id":"evt_1OrlfcFvFEcV7KhhYdemHC4q",
+      "object":"event",
+      "api_version":"2023-10-16",
+      "created":1709836076,
+      "data":{
+         "object":{
+            "id":"cus_Ph9zopzZYifGvU",
+            "object":"customer",
+            "address":null,
+            "balance":0,
+            "created":1709836076,
+            "currency":null,
+            "default_source":null,
+            "delinquent":false,
+            "description":null,
+            "discount":null,
+            "email":null,
+            "invoice_prefix":"2331D388",
+            "invoice_settings":{
+               "custom_fields":null,
+               "default_payment_method":null,
+               "footer":null,
+               "rendering_options":null
+            },
+            "livemode":true,
+            "metadata":{
+
+            },
+            "name":"coolest customer",
+            "next_invoice_sequence":1,
+            "phone":null,
+            "preferred_locales":[
+
+            ],
+            "shipping":null,
+            "tax_exempt":"none",
+            "test_clock":null
+         }
+      },
+      "livemode":true,
+      "pending_webhooks":0,
+      "request":{
+         "id":"req_id3MuDYoBgmN4d",
+         "idempotency_key":"6fbb7f75-0658-4989-989e-706fab3abe76"
+      },
+      "type":"customer.created"
+   }
+}
