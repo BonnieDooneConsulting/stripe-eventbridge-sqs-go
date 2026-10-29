@@ -1,0 +1,32 @@
+{
+  "id": "evt_sample_invoice",
+  "object": "event",
+  "api_version": "API_VERSION",
+  "created": 1761600000,
+  "data": {
+    "object": {
+      "id": "in_SampleInvoice01",
+      "object": "invoice",
+      "amount_due": 2900,
+      "amount_paid": 0,
+      "amount_remaining": 2900,
+      "attempt_count": 2,
+      "attempted": true,
+      "billing_reason": "subscription_cycle",
+      "currency": "usd",
+      "customer": "cus_SampleCustomer01",
+      "customer_email": "jenny.rosen@example.com",
+      "livemode": false,
+      "metadata": {},
+      "next_payment_attempt": 1761859200,
+      "status": "open"
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 0,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "invoice.payment_failed"
+}
