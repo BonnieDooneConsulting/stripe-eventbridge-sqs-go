@@ -1,0 +1,37 @@
+{
+  "version": "0",
+  "id": "4b1c6f0e-2a8e-4f51-9d3b-0c7a5e2f9a11",
+  "detail-type": "checkout.session.completed",
+  "source": "aws.partner/stripe.com/ed_test_61Sample0000000000000000000000",
+  "account": "111122223333",
+  "time": "2026-10-28T15:00:00Z",
+  "region": "us-east-1",
+  "resources": [
+    "arn:aws:events:us-east-1::event-source/aws.partner/stripe.com/ed_test_61Sample0000000000000000000000"
+  ],
+  "detail": {
+    "id": "evt_1SampleCheckout000001",
+    "object": "event",
+    "api_version": "2026-09-30.endive",
+    "created": 1761663600,
+    "data": {
+      "object": {
+        "id": "cs_test_a1B2c3D4e5F6g7H8i9J0",
+        "object": "checkout.session",
+        "client_reference_id": "user_42",
+        "customer": "cus_SampleCustomer01",
+        "mode": "subscription",
+        "payment_status": "paid",
+        "status": "complete",
+        "subscription": "sub_SampleSubscription01"
+      }
+    },
+    "livemode": false,
+    "pending_webhooks": 0,
+    "request": {
+      "id": null,
+      "idempotency_key": null
+    },
+    "type": "checkout.session.completed"
+  }
+}

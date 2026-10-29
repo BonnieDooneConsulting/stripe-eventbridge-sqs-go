@@ -1,0 +1,23 @@
+{
+  "version": "0",
+  "id": "9f0e7c55-1b2a-4c3d-8e9f-001122334455",
+  "detail-type": "v2.core.account.updated",
+  "source": "aws.partner/stripe.com/ed_test_61Sample0000000000000000000000",
+  "account": "111122223333",
+  "time": "2026-03-09T13:00:28Z",
+  "region": "us-east-1",
+  "resources": [],
+  "detail": {
+    "id": "evt_test_65UIRNU7G1XbhCfOim416TgmEI4ASQ3jHxXt8RFwXoeVwO",
+    "object": "v2.core.event",
+    "type": "v2.core.account.updated",
+    "livemode": false,
+    "created": "2026-03-09T13:00:28.435Z",
+    "context": null,
+    "related_object": {
+      "id": "acct_1T93Q4Pmpb34Vto6",
+      "type": "v2.core.account",
+      "url": "/v2/core/accounts/acct_1T93Q4Pmpb34Vto6"
+    }
+  }
+}
